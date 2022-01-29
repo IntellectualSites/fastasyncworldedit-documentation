@@ -1,0 +1,72 @@
+= Biomes
+:toc: left
+:toclevels: 3
+:icons: font
+
+:biomeinfo: Biomes are independent of the Y-Axis in version *prior* to 1.16. From 1.16 and onwards biomes are now defined in 4x4x4 sections. More (rather technical) information regarding the new format can be found https://wiki.vg/Protocol#Chunk_Data[here]
+
+===== xref:../README.adoc[🏠 Return to the index]
+
+== Biomelist
+
+[TIP]
+Read more about biomes https://minecraft.gamepedia.com/Biome[here].
+
+Get a list of all available biomes in Bukkit.
+
+=== Usage
+`//biomelist [-p <page>]`
+
+=== Permission
+`worldedit.biome.list`
+
+=== Visual Example
+
+image::https://i.imgur.com/mvdiNnQ.png[biomelist.png]
+
+== Biomeinfo
+
+Displays the current biome.
+
+* By default, you get a list of all biomes in your region selection (picture 1).
+* If the `-p` flag is specified, the command will instead display the biome of the chunk you are currently in (picture 2).
+* If the `-t` flag is specified, is the biome of the target block in your https://minecraft.gamepedia.com/File:HUD_example.png[crosshair] (picture 3) will be displayed.
+
+[NOTE]
+{biomeinfo}
+
+=== Usage
+`//biomeinfo [-p] [-t]`
+
+=== Permission
+`worldedit.biome.info`
+
+=== Visual Examples
+
+. image:https://i.imgur.com/PxB1JOG.png[biomeinfo.png]
+
+. image:https://i.imgur.com/I2hD28o.png[biomeinfo-p.png]
+
+. image:https://i.imgur.com/R5G8XP9.png[biomeinfo-t.png]
+
+== Setbiome
+
+Set the biome of the region selection.
+
+* By default, the commands changes the biome(s) in your selection (picture 1).
+* Use `-p` to ignore the selection and change the biome at your current position (picture 2).
+
+[NOTE]
+{biomeinfo}
+
+=== Usage
+`//setbiome <biome> [-p]`
+
+=== Permission
+`worldedit.biome.set`
+
+=== Visual Examples
+
+. image:https://i.imgur.com/ut2Im7O.png[setbiome.png]
+
+. image:https://i.imgur.com/MxdpUFK.png[setbiome-p.png]

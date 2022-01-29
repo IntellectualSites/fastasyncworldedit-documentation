@@ -1,0 +1,19 @@
+name: generate-wiki
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: asciidoctor-ghpages
+        uses: manoelcampos/asciidoctor-ghpages-action@v2
+        with:
+          asciidoctor_params: --attribute=nofooter
+          pdf_build: true
+          source_dir: sources/
+          slides_build: true
+          slides_main_adoc_file: README

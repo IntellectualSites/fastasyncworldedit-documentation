@@ -1,0 +1,38 @@
+= Initial Setup
+:toc: left
+:toclevels: 3
+:icons: font
+
+:source-highlighter: coderay
+:source-language: YAML
+
+===== xref:../README.adoc[🏠 Return to the index]
+
+== Introduction
+
+* https://www.spigotmc.org/resources/13932/[Download the plugin]
+* Put "FastAsyncWorldEdit" into your `plugins` folder
+* Reboot the server and FAWE will generate all necessary files.
+
+Make sure your server has been launched with https://adoptium.net/[Java 17].
+
+[WARNING]
+Do not install WorldEdit! FAWE is a +++<ins>+++direct+++</ins>+++ replacement.
+
+== Region restrictions:
+
+The following plugins are supported natively by us, other third party plugins may not be listed:
+
+* https://www.spigotmc.org/resources/factionsuuid.1035/[FactionsUUID]
+* https://dev.bukkit.org/projects/favs[FastAsyncVoxelSniper]
+* https://www.spigotmc.org/resources/68900/[GriefDefender]
+* https://www.spigotmc.org/resources/griefprevention.1884/[GriefPrevention]
+* https://www.spigotmc.org/resources/plotsquared-v6.77506/[PlotSquared v6]
+* https://www.spigotmc.org/resources/towny-advanced.72694/[Towny]
+* https://dev.bukkit.org/projects/worldguard[WorldGuard]
+
+== Logging and Rollback
+
+Enable `use-disk` and `use-database` in the `config.yml` to use the in built FAWE logging/rollback.
+
+It is safe to give normal players access to FAWE rollback. To bypass logging use `//fast`

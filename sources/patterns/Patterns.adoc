@@ -1,0 +1,159 @@
+= Patterns
+:toc: left
+:toclevels: 3
+:icons: font
+
+===== xref:../README.adoc[🏠 Return to the index]
+
+== Introduction
+
+[NOTE]
+This page is currently being revised.
+
+Patterns are used in various commands when changing blocks. e.g. `//set <pattern>` and `//material <pattern>`
+
+== Syntax
+
+=== Blocks
+
+Use the name or id of a block (e.g. `stone`).
+
+=== Inventory
+
+You can use `hand`, or e.g. `slot5` to use blocks from your inventory.
+
+=== Multiple patterns
+
+Use a comma (`,`) to randomly use a block from multiple patterns. For specific ratios you can use `%` e.g. `80%stone,20%planks`
+
+=== Arguments
+
+Pattern arguments should be inside square brackets e.g. `#simplex[10][stone,wood]`
+
+== Pattern list
+
+=== #offset <dx> <dy> <dz> <pattern>
+
+*Desc*: Offset a pattern
+
+=== #mask <mask> <pattern-true> <pattern-false>
+
+*Desc*: Apply a pattern depending on a mask
+
+=== #spread <dx> <dy> <dz> <pattern>
+
+*Desc*: Randomly spread blocks
+
+=== #buffer <pattern>
+
+*Desc*: Only place a block once while a pattern is in use +
+Use with a brush when you don't want to apply to the same spot twice
+
+=== #color <color>
+
+*Desc*: Use the block closest to a specific color
+
+=== #clipboard
+
+*Desc*: Use the blocks in your clipboard as the pattern
+
+=== #existing
+
+*Desc*: Use the block that is already there
+
+=== #biome <biome>
+
+*Desc*: Set the biome
+
+=== = <expression>
+
+*Desc*: Expression pattern: http://wiki.sk89q.com/wiki/WorldEdit/Expression_syntax
+
+=== #relative <pattern>
+
+*Desc*: Offset the pattern to where you click
+
+=== #saturate <r> <g> <b>
+
+*Desc*: Saturate the existing block with a color
+
+=== #darken
+
+*Desc*: Darken the existing block
+
+=== #anglecolor <distance>
+
+*Desc*: A darker block based on the existing terrain angle
+
+=== #desaturate <percent>
+
+*Desc*: Desaturated color of the existing block
+
+=== #averagecolor <r> <g> <b>
+
+*Desc*: Average between the existing block and a color
+
+=== #fullcopy [schem|folder|url=#copy] [rotate=false] [flip=false]
+
+*Desc*: Places your full clipboard at each block
+
+=== #buffer2d <pattern>
+
+*Desc*: Only place a block once in a column while a pattern is in use
+
+=== #angledata
+
+*Desc*: Block data based on the existing terrain angle
+
+=== #lighten [randomize=true] [max-complexity=100]
+
+*Desc*: Lighten the existing block
+
+=== #!x <pattern>
+
+*Desc*: The pattern will not be provided the z axis info. +
+Example: #!x[#!z[#~[#l3d[pattern]]]]
+
+=== #surfacespread <distance> <pattern>
+
+*Desc*: Applies to only blocks on a surface. Selects a block from provided pattern with a given ranomized offset [0, +++<distance>+++). e.g. Use `#existing` to randomly offset blocks in the world, or `#copy` to offset blocks in your clipboard+++</distance>+++
+
+=== #solidspread <dx> <dy> <dz> <pattern>
+
+*Desc*: Randomly spread solid blocks
+
+=== #linear2d <pattern> [xscale=1] [zscale=1]
+
+*Desc*: Use the x,z coordinate to pick a block from the list
+
+=== #!y <pattern>
+
+*Desc*: The pattern will not be provided the y axis info
+
+=== #linear3d <pattern> [xscale=1] [yscale=1] [zscale=1]
+
+*Desc*: Use the x,y,z coordinate to pick a block from the list
+
+=== #linear <pattern>
+
+*Desc*: Sequentially set blocks from a list of patterns
+
+=== #!z <pattern>
+
+*Desc*: The pattern will not be provided the z axis info
+
+=== #simplex <scale=10> <pattern>
+
+*Desc*: Use simplex noise to randomize blocks
+
+=== #perlin <scale=10> <pattern>
+
+*Desc*: Use perlin noise to randomize blocks
+
+=== #rmf <scale=10> <pattern>
+
+*Desc*: Use ridged multi-fractal noise to randomize blocks
+
+=== #voronoi <scale=10> <pattern>
+
+*Desc*: Use voronoi noise to randomize blocks

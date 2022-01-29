@@ -1,0 +1,31 @@
+[link=https://github.com/IntellectualSites/FastAsyncWorldEdit/]
+image::https://raw.githubusercontent.com/IntellectualSites/Assets/1d3749d591d4929e8768b5ae3dd60ea69f9cb8a4/plugins/FastAsyncWorldEdit/FastAsyncWorldEdit.svg[FastAsyncWorldEdit, 200, align="center"]
+
+'''
+
+This is the documentation repository for FastAsyncWorldEdit.
+Click on the link:https://intellectualsites.github.io/fastasyncworldedit-documentation/[here]  to get started.
+Below you can find important links for FastAsyncWorldEdit.
+
+== Contribute
+
+=== Getting started
+Contributions are always welcome! Fork the repository and start editing the source files in the `sources/` directory. +
+If you are working with IntelliJ, install the https://plugins.jetbrains.com/plugin/7391-asciidoc[AsciiDoc] plugin to have a live preview while editing the files. +
+Other software, like https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode[VisualStudio], has an AsciiDoc plugin as well. +
+Of course, you can use the GitHub editor to edit the files too or https://asciidoclive.com[AsciiDocLive] to paste your changes back later into the GitHub editor before committing.
+
+=== AsciiDoctor newbies read here
+
+AsciiDoc is not more difficult to work with than Markdown, it's just a more feature rich tool. +
+Take a look at the resources below if you want to learn more about AsciiDoc:
+
+* https://asciidoclive.com[AsciiDocLive]
+* https://docs.asciidoctor.org/asciidoctor/latest/[AsciiDoc Documentation]
+
+== Other Links
+
+* https://www.spigotmc.org/resources/13932/[Download FastAsyncWorldEdit]
+* https://discord.gg/intellectualsites[Discord]
+* https://github.com/IntellectualSites/FastAsyncWorldEdit/issues[Issues & Feature]
+* https://intellectualsites.crowdin.com/fastasyncworldedit[Translations]

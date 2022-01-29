@@ -1,0 +1,6 @@
+= FastAsyncWorldEdit Documentation
+:toc: left
+:toclevels: 3
+
+:docinfo: shared,shared-footer
+
