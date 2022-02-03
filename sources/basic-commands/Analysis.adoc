@@ -5,7 +5,6 @@
 
 :experimental: // Used for keyboard buttons
 
-[descrete]
 ===== xref:../README.adoc[🏠 Return to the index]
 
 == Nbtinfo
