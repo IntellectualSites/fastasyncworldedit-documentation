@@ -1,0 +1,8 @@
+== Description
+// Please describe what this pull request does.
+
+== Submitter Checklist
+// Make sure you have completed the following steps (put an "X" between of brackets):
+- [ ] Make sure you are opening from a topic branch (**/feature/fix/docs/ branch** (right side)) and not your main branch.
+- [ ] Ensure that the pull request title represents the proposed change appropriately.
+- [ ] I read and followed the [contribution guidelines](https://github.com/IntellectualSites/.github/blob/main/CONTRIBUTING.md)

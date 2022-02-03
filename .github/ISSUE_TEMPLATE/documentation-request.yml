@@ -1,0 +1,15 @@
+name: "📝 Documentation Request"
+description: Create a report for an undocumented feature you want to see in the documentation
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe your use-case which is not covered by existing documentation.  If it is easier to submit a documentation patch instead of writing an issue, just do it!
+
+  - type: textarea
+    attributes:
+      label: Describe feature you want to see in documentation
+      description: A clear and concise description how and why you want to see this feature in the documentation.
+    validations:
+      required: true

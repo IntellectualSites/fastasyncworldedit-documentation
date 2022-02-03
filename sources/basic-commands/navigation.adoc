@@ -1,0 +1,118 @@
+= Navigation
+:toc: left
+:toclevels: 3
+:icons: font
+
+===== xref:../README.adoc[🏠 Return to the index]
+
+== Jumpto
+
+With this command you teleport you to a specific position.
+
+* You can manually define the position with the `[world,x,y,z]` option. Else, if undefined, the command will default the target block in your https://minecraft.gamepedia.com/File:HUD_example.png[crosshair].
+* To prevent a stuck you will teleport upstairs of the next solid block in the vertical with two free blocks in the hight for a place to stay (picture 1).
+
+=== Usage
+`//jumpto [world,x,y,z]`
+
+=== Permission
+`worldedit.navigation.jumpto.command`
+
+=== Visual Example
+
+. image:https://i.imgur.com/mbeJqzP.png[jumpto-topblock.png]
+
+== Unstuck
+
+With this command you can escape from being stuck inside a block.
+
+* Similar to `//jumpto`, you will teleport to the nearest solid block above (vertically) that also has two air blocks above it.
+
+=== Usage
+`//unstuck`
+
+=== Permission
+`worldedit.navigation.unstuck`
+
+== Thru
+
+With this command you passthrough walls in your https://minecraft.gamepedia.com/File:HUD_example.png[crosshair] direction (picture 1).
+
+* For this command you have to standing before a wall (distance does not matter). The maximum teleport distance are 5 blocks.
+
+=== Usage
+`//thru`
+
+=== Permission
+`worldedit.navigation.thru.command`
+
+=== Visual Example
+
+. image:https://i.imgur.com/SLtpfPv.png[thru.png]
+
+== Ascend
+
+With this command you can teleport you up a specify `amount of floors` (picture 1).
+
+* You will teleport upstairs of the next solid block in the vertical with two free blocks in the height for a place to stay.
+* The distance between the floors are irrelevant.
+
+=== Usage
+`//ascend [amount of floors]`
+
+=== Permission
+`worldedit.navigation.ascend`
+
+=== Visual Example
+
+. image:https://i.imgur.com/J15EzHi.png[ascend.png]
+
+== Descend
+
+With this command you can teleport down a specified `amount of floors` (picture 1).
+
+* You will teleport downs to the next solid block in the vertical which has two air blocks above it.
+* The distance between the floors are irrelevant.
+
+=== Usage
+`//descend [amount of floors]`
+
+=== Permission
+`worldedit.navigation.descend`
+
+=== Visual Example
+
+. image:https://i.imgur.com/xB5AD3f.png[descend.png]
+
+== Up
+
+With this command you can teleport you upwards with your specify `distance`.
+
+* By default, you will stand on a glass block to keep you still (picture 1).
+
+=== Usage
+`//up <distance> [-f] [-g]`
+
+=== Permission
+`worldedit.navigation.up`
+
+=== Visual Example
+
+. image:https://i.imgur.com/9cbxPNP.png[up.png]
+
+== Ceil
+
+With this command you can teleport upwards above a ceiling.
+
+* By default, you will stand on a glass block to keep you still (picture 1).
+* With the `clearance` option you can specify a distance between your head and the ceiling. The default distance is 0, so you won't have any clearance above your head.
+
+=== Usage
+`//ceil [clearance] [-f] [-g]`
+
+=== Permission
+`worldedit.navigation.ceiling`
+
+=== Visual Example
+
+. image:https://i.imgur.com/Mk82aBk.png[ceil.png]

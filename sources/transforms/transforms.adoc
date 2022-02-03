@@ -1,0 +1,67 @@
+= Transforms
+:toc: left
+:toclevels: 3
+:icons: font
+
+===== xref:../README.adoc[🏠 Return to the index]
+
+[NOTE]
+This page is currently being revised.
+
+== Introduction
+
+A transformation can be applied to a brush or globally to modify where and how blocks are changed.
+
+== Syntax
+
+=== Multiple transforms
+
+Use a comma (`,`) to randomly use a transform from a list e.g. `#offset[0][1][0],#pattern[stone]` (offset the block one up, OR change it to stone)
+
+Use an ampersand (`&`) to use multiple transforms for each block e.g. `#offset[0][1][0]&#pattern[stone]` (offset the block one up AND change it to stone)
+
+=== Arguments
+
+Transform arguments should be inside square brackets e.g. `#offset[0][1][0]`
+
+=== Setting a transform
+
+==== //gtransform [transforms...]
+
+Perm: `worldedit.global-transform`  +
+Desc: Set the global mask
+
+==== //transform [transform...]
+
+Perm: `worldedit.brush.options.transform`  +
+Desc: Set the brush mask (separate multiple masks by spaces ` ` or colons `:`)
+
+== Transform List
+
+=== #offset <dx> <dy> <dz> [transform]
+
+*Desc*: Offset transform
+
+=== #rotate <rotateX> <rotateY> <rotateZ> [transform]
+
+*Desc*: All changes will be rotated around the initial position
+
+=== #scale <dx> <dy> <dz> [transform]
+
+*Desc*: All changes will be scaled
+
+=== #pattern <pattern> [transform]
+
+*Desc*: Always use a specific pattern
+
+=== #linear3d <transform>
+
+*Desc*: Use the x,y,z coordinate to pick a transform from the list
+
+=== #linear <transform>
+
+*Desc*: Sequentially pick from a list of transform
+
+=== #spread <dx> <dy> <dz> [transform]
+
+*Desc*: Random offset transform

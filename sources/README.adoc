@@ -1,0 +1,47 @@
+= FastAsyncWorldEdit Documentation
+:toc: left
+:toclevels: 3
+
+:docinfo: shared,shared-footer
+
+:apidir: api
+:basicdir: basic-commands
+:permissiondir: permission
+:configurationdir: configuration
+:installationdir: installation
+:masksdir: masks
+:patterndir: patterns
+:transformdir: transforms
+
+== Get FastAsyncWorldEdit
+* Download https://www.spigotmc.org/resources/13932/[FastAsyncWorldEdit]
+* Our support discord is available at https://discord.gg/intellectualsites
+
+== API
+=== xref:{apidir}/api-usage.adoc[API Documentation]
+
+== Basic commands
+=== xref:{basicdir}/analysis.adoc[Analysis]
+=== xref:{basicdir}/biomes.adoc[Biomes]
+=== xref:{basicdir}/brushes.adoc[Brushes]
+=== xref:{basicdir}/geometry.adoc[Geometry]
+=== xref:{basicdir}/main-commands-and-permissions.adoc[Main commands and permissions]
+=== xref:{basicdir}/nature.adoc[Nature]
+=== xref:{basicdir}/navigation.adoc[Navigation]
+=== xref:{basicdir}/selection.adoc[Selection]
+
+== Configuration
+=== xref:{configurationdir}/configuration.adoc[Configuration]
+=== xref:{configurationdir}/permissions.adoc[Permission Explanation]
+
+== Installation
+=== xref:{installationdir}/installation.adoc[Installation]
+
+== Masks
+=== xref:{masksdir}/masks.adoc[Masks]
+
+== Patterns
+=== xref:{patterndir}/patterns.adoc[Patterns]
+
+== Transforms
+=== xref:{transformdir}/transforms.adoc[Transforms]

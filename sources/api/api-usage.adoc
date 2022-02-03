@@ -1,0 +1,92 @@
+= API Usage
+:toc: left
+:toclevels: 3
+:icons: font
+:source-highlighter: coderay
+
+:latestVersion: 2.0.1
+
+===== xref:../README.adoc[🏠 Return to the index]
+
+== Maven & Gradle Examples
+
+JavaDocs for the -bukkit module: https://javadoc.io/doc/com.fastasyncworldedit/FastAsyncWorldEdit-Bukkit  +
+JavaDocs for the -core module: https://javadoc.io/doc/com.fastasyncworldedit/FastAsyncWorldEdit-Core
+
+The WorldEdit documentation widely applies to FAWE too, you can find it here: https://worldedit.enginehub.org/en/latest/api/index.html
+
+We suggest that FAWE operations are completed asynchronously. Using FAWE API from the main thread is likely to block the main thread if FAWE is used correctly. `Operations#complete` (and the other `Operations` methods) are blocking, as is `EditSession#close` so anything you want to happen after an edit, place after closing the EditSession with close(), try-with-resources, etc. Always ensure EditSessions are closed before doing anything else, and that you do not reuse EditSessions else changes may not necessarily be flushed to the world.
+
+[NOTE]
+The API requires using Java 17 at development time. Make sure to point your toolchain to Java 17.
+
+If you are looking for snapshots, add the repository of S01 OSS Sonatype to the repositories' block.
+
+=== Gradle - FAWE Core
+
+[source, kotlin, subs="attributes"]
+----
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core:{latestVersion}")
+}
+----
+
+=== Gradle - FAWE Bukkit and Core
+
+[source, kotlin, subs="attributes"]
+----
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core:{latestVersion}")
+    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit:{latestVersion}") { isTransitive = false }
+}
+----
+
+=== Maven - Fawe Core
+
+[source, xml, subs="attributes, verbatim"]
+----
+<!-- FAWE API -->
+<dependency>
+  <groupId>com.fastasyncworldedit</groupId>
+  <artifactId>FastAsyncWorldEdit-Core</artifactId>
+  <version>{latestVersion}</version>
+  <scope>provided</scope>
+</dependency>
+----
+
+=== Maven - FAWE Bukkit and Core
+
+[source, xml, subs="attributes, verbatim"]
+----
+    <!-- FAWE Core API -->
+<dependencies>
+    <dependency>
+      <groupId>com.fastasyncworldedit</groupId>
+      <artifactId>FastAsyncWorldEdit-Core</artifactId>
+      <version>{latestVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- FAWE Bukkit API -->
+    <dependency>
+        <groupId>com.fastasyncworldedit</groupId>
+        <artifactId>FastAsyncWorldEdit-Bukkit</artifactId>
+        <version>{latestVersion}</version>
+        <scope>provided</scope>
+        <exclusions>
+            <exclusion>
+                <artifactId>FastAsyncWorldEdit-Core</artifactId>
+                <groupId>*</groupId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+</dependencies>
+----
