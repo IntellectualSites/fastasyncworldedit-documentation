@@ -19,46 +19,44 @@ To view this information ingame use `//help [category|command]`
 * `<arg=value>` - Default or suggested value
 * `-a` - A command flag e.g. `//<command> -a [flag-value]`
 
-//TODO update links
 See also:
 
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Biomes[Biomes]
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Brushes[Brushes]
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Geometric[Geometry]
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Nature[Nature]
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Navigation[Navigation]
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Sel[Selection]
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Masks[Masks]
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Patterns[Patterns]
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Transforms[Transforms]
+* xref:biomes.adoc[Biomes]
+* xref:brushes.adoc[Brushes]
+* xref:geometry.adoc[Geometry]
+* xref:nature.adoc[Nature]
+* xref:navigation.adoc[Navigation]
+* xref:selection.adoc[Selection]
+* xref:../masks/masks.adoc[Masks]
+* xref:../patterns/patterns.adoc[Patterns]
+* xref:../transforms/transforms.adoc[Transforms]
 
 == Content
 
-//TODO fix
 Click on a category to go to the list of commands, or `More Info` for detailed descriptions
 
-* <<world-edit-commands,`World Edit Commands`>> (Updating, informational, debug and help commands)
-* <<utility-commands,`Utility Commands`>> (Various utility commands)
-* <<region-commands,`Region Commands`>> (Commands that operate on regions)
-* <<selection-commands,`Selection Commands`>> (Change your selection points, mode or view info about your selection)
-* <<history-commands,`History Commands`>> (Commands to undo, redo, and clear history)
-* <<schematic-commands,`Schematic Commands`>> (Commands that work with schematic files)
-* <<clipboard-commands,`Clipboard Commands`>> (Related commands to copy and pasting blocks)
-* <<generation-commands,`Generation Commands`>> (Create structures and features)
+* <<_world_edit_commands,`World Edit Commands`>> (Updating, informational, debug and help commands)
+* <<_utility_commands,`Utility Commands`>> (Various utility commands)
+* <<_region_commands,`Region Commands`>> (Commands that operate on regions)
+* <<_selection_commands,`Selection Commands`>> (Change your selection points, mode or view info about your selection)
+* <<_history_commands,`History Commands`>> (Commands to undo, redo, and clear history)
+* <<_schematic_commands,`Schematic Commands`>> (Commands that work with schematic files)
+* <<_clipboard_commands,`Clipboard Commands`>> (Related commands to copy and pasting blocks)
+* <<_generation_commands,`Generation Commands`>> (Create structures and features)
 * https://worldedit.readthedocs.io/en/latest/commands/#biome-commands[Biome Commands]
-* <<super-pickaxe-commands,`Super Pickaxe Commands`>> (Super-pickaxe commands)
-* <<navigation-commands,`Navigation Commands`>> (Commands for moving the player around)
-* <<snapshot-commands,`Snapshot Commands`>> (List, load and view information related to snapshots)
-* <<scripting-commands,`Scripting Commands`>> (Run craftscripts)
-* <<chunk-commands,`Chunk Commands`>> (Inspect chunks)
-* <<options-commands,`Options Commands`>> (Player toggles, settings and item info)
-* <<brush-options-commands,`Brush Options Commands`>> (Tool commands)
-* <<tool-commands,`Tool Commands`>> (Bind functions to held items)
-* <<brush-commands,`Brush Commands`>> (Commands to build and draw from far away.)
-* <<masks,`/Masks`>> (Help for the various masks. )
-* <<patterns,`/Patterns`>> (Help for the various patterns.)
-* <<transforms,`/Transforms`>> (Help for the various transforms.)
-* <<create-from-image,`Create From Image`>> (Create a world from images)
+* <<_super_pickaxe_commands,`Super Pickaxe Commands`>> (Super-pickaxe commands)
+* <<_navigation_commands,`Navigation Commands`>> (Commands for moving the player around)
+* <<_snapshot_commands,`Snapshot Commands`>> (List, load and view information related to snapshots)
+* <<_scripting_commands,`Scripting Commands`>> (Run craftscripts)
+* <<_chunk_commands_,`Chunk Commands`>> (Inspect chunks)
+* <<_options_commands,`Options Commands`>> (Player toggles, settings and item info)
+* <<_brush_options_commands,`Brush Options Commands`>> (Tool commands)
+* <<_tool_commands,`Tool Commands`>> (Bind functions to held items)
+* <<_brush_commands,`Brush Commands`>> (Commands to build and draw from far away.)
+* <<_masks,`/Masks`>> (Help for the various masks. )
+* <<_patterns_,`/Patterns`>> (Help for the various patterns.)
+* <<_transforms_,`/Transforms`>> (Help for the various transforms.)
+* <<_create_from_image_currently_not_implemented,`Create From Image`>> (Create a world from images, currently not implemented)
 
 === Uncategorized
 

@@ -20,12 +20,11 @@ FAWE has brush tools that allow you to build and draw from far away. When you en
 
 === Changing brush settings
 
-//TODO update links
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Patterns[`/mat <pattern>`] - Patterns decide what is placed
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Masks[`/mask <mask>`] - A destination mask decides if a block should be changed
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Masks[`/smask <mask>`] - A source mask changes if a block can be placed
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Masks[`/targetmask <mask>`] - What blocks are targeted by the brush. The default mask is `!air`
-* https://github.com/IntellectualSites/FastAsyncWorldEdit-1.13/wiki/Transforms[`/transform <transform>`] - A transform changes where the blocks are placed
+* xref:../patterns/patterns.adoc[`/mat <pattern>`] - Patterns decide what is placed
+* xref:../masks/masks.adoc#_masks[`/mask <mask>`] - A destination mask decides if a block should be changed
+* xref:../masks/masks.adoc#_smask_masks_[`/smask <mask>`] - A source mask changes if a block can be placed
+* xref:../masks/masks.adoc[`/targetmask <mask>`] - What blocks are targeted by the brush. The default mask is `!air`
+* xref:../transforms/transforms.adoc[`/transform <transform>`] - A transform changes where the blocks are placed
 * `/range <range>` - The distance you can use the brush at
 * `/size <size>` - The size of the brush (e.g. radius 10 sphere)
 * `/none` - Unbind tool  +

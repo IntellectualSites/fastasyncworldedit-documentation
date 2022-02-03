@@ -5,10 +5,8 @@
 
 ===== xref:../README.adoc[🏠 Return to the index]
 
-____
-//TODO update link
-*Info:* For command related permissions: https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Main-Commands-and-Permissions[see here]
-____
+[TIP]
+*Info:* For command related permissions: xref:../basic-commands/main-commands-and-permissions.adoc[see here]
 
 == Admin permissions
 
