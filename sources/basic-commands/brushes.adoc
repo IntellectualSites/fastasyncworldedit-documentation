@@ -57,7 +57,7 @@ Use the mouse wheel to change brush behavior
 Crouch (`shift`) and click to reset a brush. +
 This will for example, clear the clipboard of the copypaste brush, and reset the points in the spline brush.
 
-=== Visualize the brush
+=== Visualize the brush (Currently not implemented)
 
 With FAWE you can visualize how the brush will change blocks:
 `/br vis <0-2>`
@@ -67,8 +67,8 @@ With FAWE you can visualize how the brush will change blocks:
 * 2 = All block changes are visualized
 
 Video: https://www.youtube.com/watch?v=xX-MTSLoNXw  +
-Pic: https://i.imgur.com/J2g6Qfn.jpg
+image:https://i.imgur.com/J2g6Qfn.jpeg[]
 
 === Brushes:
 
-https://github.com/IntellectualSites/FastAsyncWorldEdit-Documentation/wiki/Commands#brush-commands-edittop[For a list of brushes, visit the command page.]
+xref:main-commands-and-permissions.adoc#_brush_commands[For a list of brushes, visit the command page.]

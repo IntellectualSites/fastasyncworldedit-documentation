@@ -36,7 +36,7 @@ FAWE by default is restricted to regions, this is useful for servers wanting to 
 * `fawe.towny.*`
 * `fawe.worldguard` - Allow WorldGuard region owners (`+/rg addowner ...+`) to use WorldEdit.
 * `fawe.worldguard.member` - Allow WorldGuard region members (`+/rg addmember ...+`) to use WorldEdit.
-* `fawe.worldguardextraflags` - If you've installed https://www.spigotmc.org/resources/worldguard-extra-flags.4823/[WorldGuard Extra Flags] this permission is also used.
+* `fawe.worldguardextraflags` - If you've installed WorldGuard Extra Flags this permission is also used.
 
 == Extended WorldEdit permissions:
 

@@ -2,7 +2,6 @@
 :toc: left
 :toclevels: 3
 :icons: font
-
 :source-highlighter: coderay
 :source-language: YAML
 
@@ -10,7 +9,7 @@
 
 == Introduction
 
-FAWE works well out of the box, but configuration settings in the Limits and Queue Operation sections may be used to fine--tune FAWE for your server operation. Refer to the following discussions as well as the comments in the Default Configuration file shown below.
+FAWE works well out of the box, but configuration settings in the Limits and Queue Operation sections may be used to fine tune FAWE for your server operation. Refer to the following discussions as well as the comments in the Default Configuration file shown below.
 
 If you make setting changes and encounter problems with edit operations, return to the default setting values before additional finetuning attempts.  To reset the config.yml file, delete it and restart the server or reload FAWE using the `/fawe` command.
 
@@ -84,7 +83,7 @@ Increase it if chunks fail to load in time.
 
 == Default Configuration File
 
-The default configuration file is shown below.
+The default configuration file is shown below, located in `/plugins/FastAsyncWorldEdit/config.yml`
 
 [source]
 ----

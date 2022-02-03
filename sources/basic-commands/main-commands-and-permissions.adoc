@@ -171,7 +171,7 @@ More Info: https://git.io/fjd4d
 *Perm*: `worldedit.fill.recursive`  +
 *Desc*: Fill a hole recursively
 
-==== /patterns [page=1|search|pattern]`
+==== /patterns [page=1|search|pattern]
 
 *Perm*: `worldedit.patterns`  +
 *Desc*: Patterns determine what blocks are placed +
@@ -225,7 +225,7 @@ Flags: +
 *Perm*: `fawe.confirm`  +
 *Desc*: Confirm a command
 
-==== //green [radius] [-f]`
+==== //green [radius] [-f]
 
 *Perm*: `worldedit.green`  +
 *Desc*: Greens the area
@@ -279,7 +279,7 @@ Flags: +
 *Desc*: Make the blocks in the selection fall +
 The -m flag will only fall within the vertical selection.
 
-==== //faces <pattern>`
+==== //faces <pattern>
 
 *Perm*: `worldedit.region.faces`  +
 *Desc*: Build the walls, ceiling, and floor of a selection
@@ -354,7 +354,7 @@ Flags: +
 *Perm*: `worldedit.light.fix`  +
 *Desc*: Get the light at a position
 
-==== //smooth [iterations] [mask]`
+==== //smooth [iterations] [mask]
 
 *Perm*: `worldedit.region.smooth`  +
 *Desc*: Smooths the elevation in the selection. +
@@ -430,7 +430,7 @@ ____
 *Perm*: `worldedit.analysis.count`  +
 *Desc*: Counts the number of a certain type of block
 
-==== //size  [-c]`
+==== //size  [-c]
 
 *Perm*: `worldedit.selection.size`  +
 *Desc*: Get information about the selection
@@ -440,7 +440,7 @@ ____
 *Perm*: `worldedit.selection.expand`  +
 *Desc*: Expand the selection area
 
-==== //shift <amount> [direction]`
+==== //shift <amount> [direction]
 
 *Perm*: `worldedit.selection.shift`  +
 *Desc*: Shift the selection area
@@ -481,7 +481,7 @@ otherwise full coordinates will be implied. +
 *Perm*: `worldedit.selection.hpos`  +
 *Desc*: Set position 1 to targeted block
 
-==== //outset <amount> [-h] [-v]`
+==== //outset <amount> [-h] [-v]
 
 *Perm*: `worldedit.selection.outset`  +
 *Desc*: Expands the selection by the given amount in all directions. +
@@ -575,12 +575,12 @@ ____
 *Perm*: `worldedit.clipboard.load`, `worldedit.schematic.load`, `worldedit.schematic.upload`, `worldedit.schematic.load.other`  +
 *Desc*: Load a schematic into your clipboard
 
-==== /schematic delete <filename|*>`
+==== /schematic delete <filename|*>
 
 *Perm*: `worldedit.schematic.delete`, `worldedit.schematic.delete.other`  +
 *Desc*: Delete a schematic from the schematic list
 
-==== /schematic list [global|mine|<filter>] [page=1] [-d] [-n] [-p]`
+==== /schematic list [global|mine|<filter>] [page=1] [-d] [-n] [-p]
 
 *Perm*: `worldedit.schematic.list`  +
 *Desc*: List all schematics in the schematics directory +
@@ -613,7 +613,7 @@ The -r flag will apply random rotation
 *Perm*: `worldedit.schematic.formats`  +
 *Desc*: List available formats
 
-==== /schematic show [global|mine|<filter>] [-d] [-n] [-p]`
+==== /schematic show [global|mine|<filter>] [-d] [-n] [-p]
 
 *Perm*: `worldedit.schematic.show`  +
 *Desc*: List all schematics in the schematics directory +
@@ -1324,7 +1324,7 @@ The lengthFactor controls how long the line is +
 The -h flag creates only a shell +
 The -s flag selects the clicked point after drawing
 
-==== /brush line <pattern> [radius=0] [-h] [-s] [-f]`
+==== /brush line <pattern> [radius=0] [-h] [-s] [-f]
 
 *Perm*: `worldedit.brush.line`  +
 *Desc*: Create lines. +
@@ -1589,17 +1589,17 @@ Explanation: Allows any block where the adjacent block is between 3 and 20 block
 
 ==== #zaxis
 
-*Desc*: Restrict to initial z axis
+*Desc*: Restrict to initial z-axis
 
 ==== #yaxis
 
-*Desc*: Restrict to initial y axis
+*Desc*: Restrict to initial y-axis
 
 ==== < <mask>
 
 *Desc*: below a specific block
 
-==== #simplex <scale=10> <min=0> <max=100>`
+==== #simplex <scale=10> <min=0> <max=100>
 
 *Desc*: Use simplex noise as the mask
 
@@ -1642,7 +1642,7 @@ e.g. #surfacespread[10][#existing],andesite
 *Desc*: Only place a block once while a pattern is in use +
 Use with a brush when you don't want to apply to the same spot twice
 
-==== #color <r> <g> <b>`
+==== #color <r> <g> <b>
 
 *Desc*: Use the block closest to a specific color
 
@@ -1703,7 +1703,7 @@ Use with a brush when you don't want to apply to the same spot twice
 *Desc*: The pattern will not be provided the z axis info. +
 Example: #!x[#!z[#~[#l3d[pattern]]]]
 
-==== #surfacespread <distance> <pattern>`
+==== #surfacespread <distance> <pattern>
 
 *Desc*: Applies to only blocks on a surface. Selects a block from provided pattern with a given randomized offset [0, +++<distance>+++). e.g. Use `#existing` to randomly offset blocks in the world, or `#copy` to offset blocks in your clipboard+++</distance>+++
 
@@ -1833,7 +1833,7 @@ The -w (disableWhiteOnly) will randomly apply depending on the pixel luminance
 *Desc*: Set the biome in specific parts of the map. +
 - If an image is used, the biome will have a chance to be set based on how white the pixel is (white #FFF = 100% chance) - The whiteOnly parameter determines if only white values on the image are set - If a mask is used, the biome will be set anywhere the mask applies
 
-==== /cfi overlay <pattern> [url|mask]`
+==== /cfi overlay <pattern> [url|mask]
 
 *Perm*: `worldedit.anvil.cfi`  +
 *Desc*: Change the block directly above the floor (default: air) +

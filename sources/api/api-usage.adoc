@@ -6,7 +6,7 @@
 
 :latestVersion: 2.0.1
 
-===== xref:README.adoc[🏠 Return to the index]
+===== xref:../README.adoc[🏠 Return to the index]
 
 == Maven & Gradle Examples
 
