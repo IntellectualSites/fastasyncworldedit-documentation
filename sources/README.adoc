@@ -13,6 +13,10 @@
 :patterndir: patterns
 :transformdir: transforms
 
+:icons: font
+
+:wip: icon:warning[title=Work in progress]
+
 == Get FastAsyncWorldEdit
 * Download https://www.spigotmc.org/resources/13932/[FastAsyncWorldEdit]
 * Our support discord is available at https://discord.gg/intellectualsites
@@ -25,7 +29,7 @@
 === xref:{basicdir}/biomes.adoc[Biomes]
 === xref:{basicdir}/brushes.adoc[Brushes]
 === xref:{basicdir}/geometry.adoc[Geometry]
-=== xref:{basicdir}/main-commands-and-permissions.adoc[Main commands and permissions]
+=== {wip} xref:{basicdir}/main-commands-and-permissions.adoc[Main commands and permissions]
 === xref:{basicdir}/nature.adoc[Nature]
 === xref:{basicdir}/navigation.adoc[Navigation]
 === xref:{basicdir}/selection.adoc[Selection]
@@ -38,10 +42,10 @@
 === xref:{installationdir}/installation.adoc[Installation]
 
 == Masks
-=== xref:{masksdir}/masks.adoc[Masks]
+=== {wip} xref:{masksdir}/masks.adoc[Masks]
 
 == Patterns
-=== xref:{patterndir}/patterns.adoc[Patterns]
+=== {wip} xref:{patterndir}/patterns.adoc[Patterns]
 
 == Transforms
-=== xref:{transformdir}/transforms.adoc[Transforms]
+=== {wip} xref:{transformdir}/transforms.adoc[Transforms]
