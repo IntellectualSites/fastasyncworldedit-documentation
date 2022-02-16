@@ -1355,7 +1355,7 @@ Note: Decrease brush radius, and enabled visualization to assist with placement 
 *Perm*: `worldedit.brush.rock`  +
 *Desc*: Creates a distorted sphere
 
-==== /brush height [radius=5] [file|#clipboard|imgur=null] [rotation=0] [yscale=1.00] [-h]
+==== /brush height [-lrs] [radius] [yscale] [image] [rotation]
 
 *Perm*: `worldedit.brush.height`  +
 *Desc*: This brush raises and lowers land. +
