@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "config:base",
+    ":disableDependencyDashboard"
+  ],
+  "timezone": "Europe/Berlin",
+  "schedule": [
+    "on monday after 9am"
+  ],
+  "labels": ["Renovate"],
+  "commitMessagePrefix": "build: ",
+  "rebaseWhen": "conflicted"
+}
