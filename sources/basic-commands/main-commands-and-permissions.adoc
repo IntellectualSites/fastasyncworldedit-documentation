@@ -139,7 +139,6 @@ ____
 - Use [brackets] for arguments +
 - Use , to OR multiple +
 - Use & to AND multiple +
-More Info: https://git.io/fjd4b
 
 ==== //removenear <block> [size]
 
@@ -164,7 +163,6 @@ More Info: https://git.io/fjd4b
 - Use , to OR multiple +
 - Use & to AND multiple +
 e.g. >[stone,dirt],#light[0][5],$jungle +
-More Info: https://git.io/fjd4d
 
 ==== //fillr <pattern> <radius> [depth]
 
@@ -178,7 +176,6 @@ More Info: https://git.io/fjd4d
 - Use [brackets] for arguments +
 - Use , to OR multiple +
 e.g. #surfacespread[10][#existing],andesite +
-More Info: https://git.io/fjd4F
 
 ==== //replacenear <size> <from-id> <to-id> [-f]
 
