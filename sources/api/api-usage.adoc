@@ -10,8 +10,7 @@
 
 == Maven & Gradle Examples
 
-JavaDocs for the -bukkit module: https://javadoc.io/doc/com.fastasyncworldedit/FastAsyncWorldEdit-Bukkit  +
-JavaDocs for the -core module: https://javadoc.io/doc/com.fastasyncworldedit/FastAsyncWorldEdit-Core
+JavaDocs: https://intellectualsites.github.io/fastasyncworldedit-javadocs/  +
 
 The WorldEdit documentation widely applies to FAWE too, you can find it here: https://worldedit.enginehub.org/en/latest/api/index.html
 
