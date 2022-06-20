@@ -5,6 +5,7 @@
 :source-highlighter: coderay
 
 :latestVersion: 2.3.0
+:bomVersion: 1.5
 
 ===== xref:../README.adoc[🏠 Return to the index]
 
@@ -31,6 +32,7 @@ repositories {
 
 dependencies {
     compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core:{latestVersion}")
+    implementation(platform("com.intellectualsites.bom:bom-1.18.x:{bomVersion}"))
 }
 ----
 
@@ -45,6 +47,7 @@ repositories {
 dependencies {
     compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core:{latestVersion}")
     compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit:{latestVersion}") { isTransitive = false }
+    implementation(platform("com.intellectualsites.bom:bom-1.18.x:{bomVersion}"))
 }
 ----
 
@@ -52,7 +55,17 @@ dependencies {
 
 [source, xml, subs="attributes, verbatim"]
 ----
-<!-- FAWE API -->
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.intellectualsites.bom</groupId>
+            <artifactId>bom-1.18.x</artifactId>
+            <version>{bomVersion}</version>
+            <scope>import</scope>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
 <dependency>
   <groupId>com.fastasyncworldedit</groupId>
   <artifactId>FastAsyncWorldEdit-Core</artifactId>
@@ -65,7 +78,17 @@ dependencies {
 
 [source, xml, subs="attributes, verbatim"]
 ----
-    <!-- FAWE Core API -->
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.intellectualsites.bom</groupId>
+            <artifactId>bom-1.18.x</artifactId>
+            <version>{bomVersion}</version>
+            <scope>import</scope>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
 <dependencies>
     <dependency>
       <groupId>com.fastasyncworldedit</groupId>
@@ -74,7 +97,6 @@ dependencies {
       <scope>provided</scope>
     </dependency>
 
-    <!-- FAWE Bukkit API -->
     <dependency>
         <groupId>com.fastasyncworldedit</groupId>
         <artifactId>FastAsyncWorldEdit-Bukkit</artifactId>
