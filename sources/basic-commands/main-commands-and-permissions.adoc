@@ -1335,10 +1335,12 @@ The -f flag creates a flat line
 *Desc*: Create a spline on the surface +
 Video: https://www.youtube.com/watch?v=zSN-2jJxXlM
 
-==== /brush blendball [radius=5]
+==== /brush blendball [-a] [radius=5] [minFreqDiff=1] [-m]
 
 *Perm*: `worldedit.brush.blendball`  +
 *Desc*: Smooths and blends terrain +
+ - The `-a` flag sets that the brush should only compare air vs existing blocks
+ - `-m` sets a mask to limit blocks being considered for smoothing
 Pic: https://i.imgur.com/cNUQUkj.png \-> https://i.imgur.com/hFOFsNf.png
 
 ==== /brush circle <pattern> [radius=5]
