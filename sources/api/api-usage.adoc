@@ -4,7 +4,6 @@
 :icons: font
 :source-highlighter: coderay
 
-:latestVersion: 2.4.0
 :bomVersion: 1.7
 
 ===== xref:../README.adoc[🏠 Return to the index]
@@ -31,8 +30,8 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core:{latestVersion}")
     implementation(platform("com.intellectualsites.bom:bom-1.18.x:{bomVersion}"))
+    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core")
 }
 ----
 
@@ -45,9 +44,9 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core:{latestVersion}")
-    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit:{latestVersion}") { isTransitive = false }
     implementation(platform("com.intellectualsites.bom:bom-1.18.x:{bomVersion}"))
+    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core")
+    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit") { isTransitive = false }
 }
 ----
 
@@ -69,7 +68,6 @@ dependencies {
 <dependency>
   <groupId>com.fastasyncworldedit</groupId>
   <artifactId>FastAsyncWorldEdit-Core</artifactId>
-  <version>{latestVersion}</version>
   <scope>provided</scope>
 </dependency>
 ----
@@ -93,14 +91,12 @@ dependencies {
     <dependency>
       <groupId>com.fastasyncworldedit</groupId>
       <artifactId>FastAsyncWorldEdit-Core</artifactId>
-      <version>{latestVersion}</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
         <groupId>com.fastasyncworldedit</groupId>
         <artifactId>FastAsyncWorldEdit-Bukkit</artifactId>
-        <version>{latestVersion}</version>
         <scope>provided</scope>
         <exclusions>
             <exclusion>
