@@ -5,7 +5,7 @@
 :source-highlighter: coderay
 
 :latestVersion: 2.4.0
-:bomVersion: 1.5
+:bomVersion: 1.7
 
 ===== xref:../README.adoc[🏠 Return to the index]
 
