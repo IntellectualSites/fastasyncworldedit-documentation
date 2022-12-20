@@ -106,7 +106,7 @@ With this command you get different measurements and other info about your selec
 === Permission
 `worldedit.selection.size`
 
-== Analyzing a selection
+=== Analyzing a selection
 
 image::https://i.imgur.com/O0HHzyW.png[size_chatoutput.png]
 
@@ -116,7 +116,7 @@ image::https://i.imgur.com/O0HHzyW.png[size_chatoutput.png]
 . diagonal distance in block-length
 . amount of blocks (with AIR)
 
-== Analyzing a clipboard
+=== Analyzing a clipboard
 
 image::https://i.imgur.com/JffswW6.png[size-d_chatoutput_selection.png]
 
@@ -125,7 +125,7 @@ image::https://i.imgur.com/JffswW6.png[size-d_chatoutput_selection.png]
 . position of your copy (important for the schematic offset)
 . amount of blocks (with AIR)
 
-== Analyzing a schematic
+=== Analyzing a schematic
 
 image::https://i.imgur.com/NqfkzeB.png[size-d_chatoutput_schematic.png]
 
