@@ -36,9 +36,9 @@ With this command you can escape from being stuck inside a block.
 
 == Thru
 
-With this command you passthrough walls in your https://minecraft.gamepedia.com/File:HUD_example.png[crosshair] direction (picture 1).
+With this command you pass through walls in your https://minecraft.gamepedia.com/File:HUD_example.png[crosshair] direction (picture 1).
 
-* For this command you have to standing before a wall (distance does not matter). The maximum teleport distance are 5 blocks.
+* For this command you have to standing before a wall. The maximum teleport distance are 6 blocks. Thus, the wall may be up to 5 blocks deep.
 
 === Usage
 `//thru`
