@@ -1,13 +1,10 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    ":disableDependencyDashboard"
+    ":semanticCommitsDisabled"
   ],
-  "timezone": "Europe/Berlin",
-  "schedule": [
-    "on monday after 9am"
-  ],
-  "labels": ["Renovate"],
-  "commitMessagePrefix": "build: ",
-  "rebaseWhen": "conflicted"
+  "labels": ["dependencies"],
+  "rebaseWhen": "conflicted",
+  "schedule": ["on the first day of the month"]
 }
