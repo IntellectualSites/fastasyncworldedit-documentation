@@ -4,7 +4,7 @@
 :icons: font
 :source-highlighter: coderay
 
-:bomVersion: 1.34
+:bomVersion: 1.37
 
 ===== xref:../README.adoc[🏠 Return to the index]
 
